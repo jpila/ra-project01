@@ -1,0 +1,162 @@
+/*Fonts and general Setup*/
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Raleway-Light;
+  src: url('fonts/Raleway-Light.ttf');
+}
+@font-face {
+  font-family: PlayFairDisplay;
+  src: url('fonts/PlayfairDisplay-Regular.otf');
+}
+
+h2, h3 {
+  font-family: PlayFairDisplay;
+  text-align:center;
+}
+h2{
+  padding: 20px;
+}
+.white-text{
+  color: #FFFFFF;
+}
+.orange-text{
+  color: #e2574c;
+}
+.grey-text{
+  color: #969696;
+}
+
+body{
+  font-size: 14px;
+  font-family: Raleway-Light;
+  color: #2d2d2d;
+}
+/*--Start Styling Header --*/
+#nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#logo{
+  height: 50px;
+  width: 100px;
+}
+#icon{
+  height: 50px;
+  width: 50px;
+}
+/*-- Start Styling Banner --*/
+.banner-container{
+  background: url('images/banner-girl.png') no-repeat center, url('images/flower-bkgd.jpg') no-repeat center;
+  background-size: contain, cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 375px;
+}
+.banner-text{
+  color: white;
+  text-align: center;
+}
+/*-- Start Styling Sections --*/
+.product-description p{
+  padding: 0px 10px;
+  text-align: center;
+}
+.section-flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.product-container{
+  width: 80%;
+}
+.product{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product h3{
+  width: 100%
+}
+.product img{
+  height: auto;
+  width: 100%;
+}
+.product h4 {
+  width: 100%
+}
+
+/*--Start Styling First Footer --*/
+
+.first-footer{
+  background: url('images/wave-bkgd.jpg');
+  background-position: bottom;
+}
+
+.textfield-container{
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+.emailInput{
+  width: 70%;
+  height: 25px;
+  border-radius: 15px;
+  border: none;
+  padding-left: 8px;
+  padding-top: 2px;
+  color: #969696;
+}
+.round-orange-button{
+  border-radius: 10px;
+  flex:1;
+  background-color: #e2574c;
+  color: #FFFFFF;
+  height: 25px;
+  margin-top: 2px;
+  margin-right: 2px;
+  border: none;
+}
+form{
+  width: 75%
+}
+.embed-submit-field{
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 30px;
+}
+
+/*--START STYLING Second FOOTER --*/
+
+.second-footer{
+  background-color: #242424;
+  color: #FFFFFF;
+}
+.underlined{
+  text-decoration: underline;
+}
+.second-footer p{
+  padding-top: 10%;
+  text-align: center;
+}
+.icons{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+.icons li{
+  display: inline;
+  padding: 0px 10px;
+}
