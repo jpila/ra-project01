@@ -7,13 +7,17 @@
   font-family: Raleway-Light;
   src: url('fonts/Raleway-Light.ttf');
 }
-@font-face {
-  font-family: PlayFairDisplay;
-  src: url('fonts/PlayfairDisplay-Regular.otf');
+.centered{
+  text-align: center;
 }
-
+.bold{
+  font-weight: 900;
+}
+.italicized{
+  font-weight: 100;
+}
 h2, h3 {
-  font-family: PlayFairDisplay;
+  font-family: 'Playfair Display', serif;
   text-align:center;
 }
 h2{
@@ -74,6 +78,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 .product-container{
   width: 80%;
 }
@@ -82,9 +87,11 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 15%
 }
 .product h3{
-  width: 100%
+  width: 100%;
+  line-height: 300%;
 }
 .product img{
   height: auto;
@@ -98,7 +105,9 @@ body{
 
 .first-footer{
   background: url('images/wave-bkgd.jpg');
+  background-size: auto;
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .textfield-container{
@@ -107,7 +116,7 @@ body{
   align-items: flex-end;
   width: 100%;
   flex-wrap: wrap;
-  padding: 10px 0px;
+  padding: 10px 0px 30px 0px;
 }
 .emailInput{
   width: 70%;
@@ -148,7 +157,8 @@ form{
   text-decoration: underline;
 }
 .second-footer p{
-  padding-top: 10%;
+  margin-top: 2%;
+  padding-top: 12%;
   text-align: center;
 }
 .icons{
@@ -158,5 +168,5 @@ form{
 }
 .icons li{
   display: inline;
-  padding: 0px 10px;
+  padding: 0px 8px;
 }
