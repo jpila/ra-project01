@@ -95,8 +95,8 @@ body{
 /*--Start Styling First Footer --*/
 
 .first-footer{
-  background: url('images/wave-bkgd.jpg');
-  background-size: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('images/wave-bkgd.jpg');
+  background-size: auto 260%;
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -115,7 +115,7 @@ body{
   color: #969696;
 }
 .round-orange-button{
-  border-radius: 10px;
+  border-radius: 25px;
   flex:1;
   background-color: #e2574c;
   height: 25px;
@@ -127,7 +127,7 @@ form{
 }
 .embed-submit-field{
   background-color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 25px;
   height: 30px;
 }
 /*--START STYLING Second FOOTER --*/
