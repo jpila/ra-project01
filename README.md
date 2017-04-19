@@ -6,3 +6,6 @@ Mobile layout completed, creating branch for tablet and web layout
 
 04/18/2017
 Started branch for desktop/tablet layout
+
+04/18/2017
+Finished desktop/tablet layout added hover to links
