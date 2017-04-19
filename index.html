@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 </head>
 <body>
   <header class="flex-initiate" id="nav">
@@ -81,9 +82,9 @@
       Unsubscribe at any time
     </p>
     <div class="textfield-container flex-initiate justify-center">
-    <form action="">
+    <form id=emailForm action="">
       <div class="embed-submit-field flex-initiate">
-      <input class="emailInput" type="text" placeholder="Your Email">
+      <input id="emailAdress" class="emailInput" type="text" placeholder="Your Email" value="Apples">
           <button class="round-orange-button white-text" type="submit">Subscribe</button>
       </div>
     </form>
@@ -105,6 +106,14 @@
       <li><a class='link white-text'href=""><i class="fa fa-google-plus"></i><span class="mob-hidden"> Google+</span></a></li>
     </ul>
   </footer>
+<script>
+  //console.log(document.getElementById('emailForm'));
+  console.log(Math);
+  document.getElementById('emailForm').addEventListener('submit', function(){
 
+    var x = document.getElementById('emailAdress');
+    console.log(x.value);
+  })
+</script>
 </body>
 </html>
