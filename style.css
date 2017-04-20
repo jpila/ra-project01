@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
 @font-face {
   font-family: Raleway-Light;
   src: url('fonts/Raleway-Light.ttf');
@@ -32,14 +37,19 @@ h2{
 .grey-text{
   color: #969696;
 }
-body{
-  font-size: 14px;
-  font-family: Raleway-Light;
+.dark-grey-text{
   color: #2d2d2d;
+}
+body{
+  font-size: 1rem;
+  font-family: Raleway-Light;
 }
 /*-- Flex Classes & Properties--*/
 .flex-initiate{
   display: flex;
+}
+.flex-end{
+  justify-content: flex-end;
 }
 .space-between{
   justify-content: space-between;
@@ -55,22 +65,46 @@ body{
   justify-content: center;
 }
 /*--Start Styling Header --*/
-#nav{
-  justify-content: space-between;
+header{
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: white;
 }
-#logo{
+header ul{
+ list-style: none;
+ text-align: right;
+ padding-right: 10px;
+}
+header ul li{
+  display: inline;
+  padding: 0px 10px;
+}
+.nav-container{
+  flex:1;
+  align-self: center;
+}
+.logo{
   height: 50px;
   width: 100px;
 }
-#icon{
+.shopping-cart{
   height: 50px;
   width: 50px;
 }
+
+#submitButton p{
+  padding-top: 2px;
+}
 /*-- Start Styling Banner --*/
+
 .banner-container{
   background:  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('images/banner-girl.png') no-repeat center, url('images/flower-bkgd.jpg') no-repeat center;
   background-size: cover,contain, cover;
   height: 375px;
+  padding-top: 50px;
+  top: 50px;
+  position: relative;
 }
 .banner-text{
   color: white;
@@ -78,6 +112,7 @@ body{
 .header-text-container{
   width: 100%;
   border-bottom: 2px solid #d7d7d7;
+  margin-bottom: 5%;
 }
 /*-- Start Styling Sections --*/
 .product-description{
@@ -86,7 +121,7 @@ body{
   padding: 0px 10px;
 }
 .product-container{
-  width: 80%
+  padding-top: 2%;
 }
 .product{
   margin-bottom: 15%
@@ -127,6 +162,11 @@ body{
   margin: 2px 2px 0px 0px;
   border: none;
 }
+
+.round-orange-button:hover{
+}
+
+
 form{
   width: 75%
 }
@@ -165,19 +205,11 @@ form{
   display: inline;
   padding: 0px 8px;
 }
-.link{
-  text-decoration: none;
-}
-li:hover{
-  background-color: #b64036;
+a:hover, li:hover{
+  color: #b64036;
 }
 @media only screen and (min-width: 600px) {
-  .product{
-    width: 50%;
-  }
-  .product-container{
-    width: 90%;
-  }
+
   img {
     height: auto;
     max-width: 100%;
@@ -211,11 +243,5 @@ li:hover{
   }
   .mob-hidden{
     display:inline;
-  }
-}
-@media only screen and (min-width: 1240px){
-  .product{
-    width: 25%;
-    margin: 40px 0px;
   }
 }

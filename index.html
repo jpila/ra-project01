@@ -5,15 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
-  <header class="flex-initiate" id="nav">
-    <img id="logo" src="images/aloha-logo.svg" alt="logo">
-    <img id="icon" src="images/cart-icon.svg" alt="">
+  <header class="flex-initiate space-between" id="nav">
+    <img id="logo" class=logo src="images/aloha-logo.svg" alt="logo">
+    <div class=nav-container>
+      <ul>
+        <a href=""><li>Home</li></a>
+        <a href="#products"><li>Products</li></a>
+        <a href="#contact"> <li>Contact</li></a>
+      </ul>
+    </div>
+    <img id="icon" class=shopping-cart src="images/cart-icon.svg" alt="">
   </header>
   <div class="flex-initiate banner-container justify-align-center">
     <div class="banner-text centered">
@@ -29,7 +39,9 @@
     </p>
   <h2><i class="italicized bordered">Most-Loved</i> <strong>Products</strong></h2>
   </section>
-  <div class="product-container flex-initiate flex-wrap justify-align-center">
+</div>
+
+  <div id=products class="owl-carousel owl-theme">
   <section class="product">
     <div class='image-container centered'>
     <img src="images/stretch-knit-dress.jpg" alt=""></div>
@@ -68,7 +80,7 @@
     <h5 class="grey-text centered">$69.00</h5 class="grey-text">
     </div>
   </section>
-</div>
+  
 </div>
 <!--End Of Sections -->
 
@@ -85,13 +97,13 @@
     <form id=emailForm action="">
       <div class="embed-submit-field flex-initiate">
       <input id="emailAdress" class="emailInput" type="text" placeholder="Your Email" value="Apples">
-          <button class="round-orange-button white-text" type="submit">Subscribe</button>
+          <p id=submitButton class="round-orange-button white-text centered">Subscribe</p>
       </div>
     </form>
   </div>
   </footer>
 
-  <footer class="second-footer white-text flex-tab-and-above-footer">
+  <footer id=contact class="second-footer white-text flex-tab-and-above-footer">
     <p class='centered'>&copy; 2016 Aloha Apparel Co <br>
     Powered by HTML and CSS.<br><br>
     604-604-6040. <span class="underlined">info@alohaapparel.com</span> <br> <br>
@@ -106,14 +118,61 @@
       <li><a class='link white-text'href=""><i class="fa fa-google-plus"></i><span class="mob-hidden"> Google+</span></a></li>
     </ul>
   </footer>
-<script>
-  //console.log(document.getElementById('emailForm'));
-  console.log(Math);
-  document.getElementById('emailForm').addEventListener('submit', function(){
 
-    var x = document.getElementById('emailAdress');
-    console.log(x.value);
-  })
-</script>
 </body>
+
+<script src="owlCarousel/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1240:{
+            items:4
+        }
+    }
+})
+
+
+document.getElementById("submitButton").addEventListener("click", onSubmitForm);
+ var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            function onSubmitForm(eventObject){
+            var email =document.getElementById('emailAdress').value
+              validateEmailAdress(email);
+            }
+
+            function validateEmailAdress(email){
+              if(email.match(re)){
+                alert('Thanks for Subscribing!');
+                document.getElementById('emailForm').submit();
+              } else {
+                alert('Please enter a valid e-mail');
+              }
+            }
+            //smooth scrolling from css-tricks
+
+$('a[href*="#"]:not([href="#"])').click(function() {
+
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top-100
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+
+</script>
 </html>
