@@ -9,3 +9,6 @@ Started branch for desktop/tablet layout
 
 04/18/2017
 Finished desktop/tablet layout added hover to links
+
+04/19/2017
+Finished Carousel & smooth scrolling
