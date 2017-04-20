@@ -14,16 +14,21 @@
 
 </head>
 <body>
-  <header class="flex-initiate space-between" id="nav">
+  <header class="flex-initiate space-between flex-wrap" id="nav">
+    <div class='icon-container'>
     <img id="logo" class=logo src="images/aloha-logo.svg" alt="logo">
-    <div class=nav-container>
+  </div>
+    <div class='nav-container flex-initiate justify-align-center'>
       <ul>
-        <a href=""><li>Home</li></a>
-        <a href="#products"><li>Products</li></a>
-        <a href="#contact"> <li>Contact</li></a>
+        <a href=""><li class=orange-text>Home</li></a>
+        <a href="#products"><li class=orange-text>Products</li></a>
+        <a href="#contact"> <li class=orange-text>Contact</li></a>
       </ul>
     </div>
+    <div class='shopping-cart-container flex-initiate '>
     <img id="icon" class=shopping-cart src="images/cart-icon.svg" alt="">
+    <div id="item-count" class='red-circle white-text'>0</div>
+    </div>
   </header>
   <div class="flex-initiate banner-container justify-align-center">
     <div class="banner-text centered">
@@ -33,23 +38,45 @@
   </div>
   <div class="flex-initiate flex-wrap justify-align-center">
   <section class="header-text-container">
-    <h2><i class="italicized">Hand-Crafted</i> <span class="bold">Styles</span></h2>
+    <h2 class='title'><i class="italicized">Hand-Crafted</i> <span class="bold">Styles</span></h2>
     <p class='centered'>Aloha Apparel Co. sells only the finest ready-to-travel clothing
     browse our current selection of products or sign-up for updates below.
     </p>
-  <h2><i class="italicized bordered">Most-Loved</i> <strong>Products</strong></h2>
   </section>
+<!-- End Of Banner Section -->
+  <div class="categories-container flex-initiate flex-wrap space-between">
+    <div class="category-first-half flex-initiate flex-wrap">
+    <div class="mens tab-and-above-flex-value flex-initiate justify-align-center border-box"><p class="centered white-text">Mens</p></div>
+    <div class="half-container flex-initiate">
+    <div class="trends tab-and-above-flex-value flex-initiate justify-align-center small-category border-box"><p class="centered white-text">Trends</p></div>
+    <div class="glasses tab-and-above-flex-value flex-initiate justify-align-center small-category border-box"><p class="centered white-text">Glasses</p></div>
+  </div>
+  </div>
+   <div class='category-second-half flex-initiate space-between flex-wrap' >
+    <div class="second-half-container flex-initiate">
+    <div class="sale tab-and-above-flex-value flex-initiate justify-align-center small-category border-box"><p class="centered white-text">Sale</p></div>
+    <div class="bags tab-and-above-flex-value flex-initiate justify-align-center small-category border-box"><p class="centered white-text">Bags</p></div>
+    </div>
+    <div class="womens tab-and-above-flex-value flex-initiate justify-align-center border-box"><p class="centered white-text">Womens</p></div>
+  </div>
+  </div>
+
+<h2 class="title"><i class="italicized bordered">Most-Loved</i> <strong>Products</strong></h2>
+
 </div>
 
   <div id=products class="owl-carousel owl-theme">
   <section class="product">
     <div class='image-container centered'>
     <img src="images/stretch-knit-dress.jpg" alt=""></div>
-    <div class=text-container>
+    <div class='text-container'>
     <h5 class="grey-text centered">DRESSES</h5 class="grey-text">
     <h3 class="orange-text centered">Stretch Knit Dress</h3>
     <h5 class="grey-text centered">$169.00</h5 class="grey-text">
     </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
   </section>
 
   <section class="product">
@@ -60,6 +87,9 @@
     <h3 class="orange-text centered">Cotton Blue Shirt</h3>
     <h5 class="grey-text centered">$89.00</h5 class="grey-text">
     </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
   </section>
 
   <section class="product">
@@ -70,6 +100,9 @@
     <h3 class="orange-text centered">Checked Stretch Dress</h3>
     <h5 class="grey-text centered">$129.00</h5 class="grey-text">
     </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
   </section>
   <section class="product">
     <div class='image-container centered'>
@@ -79,8 +112,62 @@
     <h3 class="orange-text centered">Blue Hipster Backpack</h3>
     <h5 class="grey-text centered">$69.00</h5 class="grey-text">
     </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
   </section>
-  
+
+  <section class="product">
+    <div class='image-container centered'>
+    <img src="images/demin-overall-shorts.jpg" alt=""></div>
+    <div class=text-container>
+    <h5 class="grey-text centered">SHORTS</h5 class="grey-text">
+    <h3 class="orange-text centered">Denim Overall Shorts</h3>
+    <h5 class="grey-text centered">$89.00</h5 class="grey-text">
+    </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
+  </section>
+
+  <section class="product">
+    <div class='image-container centered'>
+    <img src="images/cotton-yellow-tshirt.jpg" alt=""></div>
+    <div class='text-container'>
+    <h5 class="grey-text centered">SHIRTS</h5 class="grey-text">
+    <h3 class="orange-text centered">Cotton Yellow Shirt</h3>
+    <h5 class="grey-text centered">$89.00</h5 class="grey-text">
+    </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
+  </section>
+
+  <section class="product">
+    <div class='image-container centered'>
+    <img src="images/blue-silk-dress.jpg" alt=""></div>
+    <div class='text-container'>
+    <h5 class="grey-text centered">DRESSES</h5 class="grey-text">
+    <h3 class="orange-text centered">Blue Silk Dress</h3>
+    <h5 class="grey-text centered">$129.00</h5 class="grey-text">
+    </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
+  </section>
+  <section class="product">
+    <div class='image-container centered'>
+    <img src="images/pink-dotted-dress.jpg" alt=""></div>
+    <div class='text-container'>
+    <h5 class="grey-text centered">DRESSES</h5 class="grey-text">
+    <h3 class="orange-text centered">Pink Dotted Dress</h3>
+    <h5 class="grey-text centered">$69.00</h5 class="grey-text">
+    </div>
+    <div class='button-container flex-initiate justify-align-center'>
+    <button name=addToCart class='round-orange-button top-margin white-text'>Add To Cart</button>
+  </div>
+  </section>
+
 </div>
 <!--End Of Sections -->
 
@@ -97,7 +184,7 @@
     <form id=emailForm action="">
       <div class="embed-submit-field flex-initiate">
       <input id="emailAdress" class="emailInput" type="text" placeholder="Your Email" value="Apples">
-          <p id=submitButton class="round-orange-button white-text centered">Subscribe</p>
+          <p id=submitButton class="round-orange-button white-text centered embedded-margin">Subscribe</p>
       </div>
     </form>
   </div>
@@ -139,8 +226,17 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+var x = 0;
+var buttons = document.getElementsByName('addToCart');
+  for(i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click',add1toCart)
+  };
 
-
+       function add1toCart(eventObject){
+          console.log('apples');
+          x+=1;
+          document.getElementById("item-count").innerHTML = x;
+        };
 document.getElementById("submitButton").addEventListener("click", onSubmitForm);
  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
             function onSubmitForm(eventObject){

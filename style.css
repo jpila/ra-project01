@@ -7,7 +7,6 @@ a{
   text-decoration: none;
   color: #2d2d2d;
 }
-
 @font-face {
   font-family: Raleway-Light;
   src: url('fonts/Raleway-Light.ttf');
@@ -44,9 +43,15 @@ body{
   font-size: 1rem;
   font-family: Raleway-Light;
 }
+.border-box{
+  box-sizing: border-box;
+}
 /*-- Flex Classes & Properties--*/
 .flex-initiate{
   display: flex;
+}
+.flex-column{
+
 }
 .flex-end{
   justify-content: flex-end;
@@ -74,15 +79,26 @@ header{
 header ul{
  list-style: none;
  text-align: right;
- padding-right: 10px;
 }
 header ul li{
   display: inline;
   padding: 0px 10px;
 }
+.red-circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #e2574c;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  text-align: center;
+  line-height: 1;
+}
 .nav-container{
-  flex:1;
+  flex: 1;
   align-self: center;
+  padding-right: 10px;
 }
 .logo{
   height: 50px;
@@ -93,16 +109,17 @@ header ul li{
   width: 50px;
 }
 
+
 #submitButton p{
   padding-top: 2px;
 }
 /*-- Start Styling Banner --*/
-
 .banner-container{
   background:  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('images/banner-girl.png') no-repeat center, url('images/flower-bkgd.jpg') no-repeat center;
   background-size: cover,contain, cover;
   height: 375px;
   padding-top: 50px;
+  margin-bottom: 50px;
   top: 50px;
   position: relative;
 }
@@ -111,11 +128,79 @@ header ul li{
 }
 .header-text-container{
   width: 100%;
-  border-bottom: 2px solid #d7d7d7;
   margin-bottom: 5%;
 }
+.header-text-container p{
+  margin: 0 auto;
+  max-width: 450px;
+  align-self: center;
+}
+.title{
+  font-size: 2.5rem;
+}
+/*--Start Styling Categories--*/
+.categories-container{
+  height: 350px;
+  width: 100%;
+}
+.categories-container p{
+  font-size: 2rem;
+}
+.category-first-half{
+  width: 100%;
+  margin-bottom: 1%;
+}
+.category-second-half{
+  width: 100%;
+}
+.small-category:first-child{
+  margin-right: 1%;
+}
+.small-category:last-child{
+  margin-left: 1%;
+}
+.half-container{
+  margin-left: 1%;
+  flex: 1;
+}
+.second-half-container{
+  margin-right: 1%;
+  flex: 1;
+}
+.mens{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/mens-category.jpg') no-repeat center;
+  background-size: cover, cover;
+  width: 50%;
+}
+.trends{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/trends-category.jpg') no-repeat;
+  background-size: cover, cover;
+  width: 50%;
+}
+.glasses{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/glasses-category.jpg') no-repeat;
+  background-size: cover, cover;
+  width: 50%;
+}
+.sale{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/sale-category.jpg') no-repeat;
+  background-size: cover, cover;
+  width: 50%;
+}
+.bags{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/bags-category.jpg') no-repeat;
+  background-size: cover, cover;
+  width: 50%;
+}
+.womens{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/womens-category.jpg') no-repeat;
+  background-size: cover, cover;
+  width: 50%;
+}
 /*-- Start Styling Sections --*/
-.product-description{
+.top-margin{
+  margin-top: 5%;
+  width: 25%;
 }
 .product-description p{
   padding: 0px 10px;
@@ -124,7 +209,7 @@ header ul li{
   padding-top: 2%;
 }
 .product{
-  margin-bottom: 15%
+  margin-bottom: 10%;
 }
 .product h3{
   line-height: 300%;
@@ -140,7 +225,6 @@ header ul li{
 .first-footer p{
   padding: 0% 5%;
 }
-
 .textfield-container{
   align-items: flex-end;
   width: 100%;
@@ -156,17 +240,14 @@ header ul li{
 }
 .round-orange-button{
   border-radius: 25px;
-  flex:1;
   background-color: #e2574c;
   height: 25px;
-  margin: 2px 2px 0px 0px;
   border: none;
+  max-width: 100px;
 }
-
-.round-orange-button:hover{
+.embedded-margin{
+  margin: 2px 2px 0px 0px;
 }
-
-
 form{
   width: 75%
 }
@@ -187,12 +268,10 @@ form{
 }
 .second-footer p{
   margin-top: 1%;
-  padding-left: 2%;
-  padding-top: 5%;
+  padding: 5% 0% 0% 2%;
 }
 .icons{
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5% 0%;
   list-style: none;
 }
 .icons li{
@@ -244,4 +323,44 @@ a:hover, li:hover{
   .mob-hidden{
     display:inline;
   }
+  .tab-and-above-flex-value{
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+    .categories-container{
+      height: 650px;
+    }
+    .mens{
+      width: 100%;
+      margin-bottom: 2%;
+    }
+    .womens{
+      width: 100%;
+      margin-top: 2%;
+    }
+    .half-container{
+      margin-left: 0%;
+    }
+    .second-half-container{
+      margin-right: 0%;
+      margin-top: 1%;
+    }
+    .icon-container{
+      width: 50%;
+    }
+    .shopping-cart-container{
+      width: 50%;
+      justify-content: flex-end;
+    }
+    .nav-container{
+      order: 2;
+      width: 100%%;
+      padding-right: 0px;
+    }
+    header ul{
+      text-align: center;
+      width: 90%;
+      border-top: 2px solid #d7d7d7;
+    }
 }
