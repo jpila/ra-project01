@@ -1,12 +1,4 @@
 /*Fonts and general Setup*/
-*{
-  margin: 0;
-  padding: 0;
-}
-a{
-  text-decoration: none;
-  color: #2d2d2d;
-}
 @font-face {
   font-family: Raleway-Light;
   src: url('fonts/Raleway-Light.ttf');
@@ -222,6 +214,9 @@ header ul li{
   background-repeat: no-repeat;
   height: 35%;
 }
+.first-footer h2{
+  padding: 30px 0%;
+}
 .first-footer p{
   padding: 0% 5%;
 }
@@ -274,6 +269,9 @@ form{
   padding: 5% 0%;
   list-style: none;
 }
+#submitButton{
+  line-height: 1.5;
+}
 .icons li{
   padding: 0px 8px;
 }
@@ -288,7 +286,6 @@ a:hover, li:hover{
   color: #b64036;
 }
 @media only screen and (min-width: 600px) {
-
   img {
     height: auto;
     max-width: 100%;
