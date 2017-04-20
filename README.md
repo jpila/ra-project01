@@ -12,3 +12,7 @@ Finished desktop/tablet layout added hover to links
 
 04/19/2017
 Finished Carousel & smooth scrolling
+
+04/20/2017
+Finished Stretch Goals, Added Categories. Semi-functioning shopping cart.
+
