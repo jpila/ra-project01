@@ -161,32 +161,32 @@ header ul li{
   flex: 1;
 }
 .mens{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/mens-category.jpg') no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/mens-category.jpg') center center no-repeat;
   background-size: cover, cover;
   width: 50%;
 }
 .trends{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/trends-category.jpg') no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/trends-category.jpg')center center no-repeat;
   background-size: cover, cover;
   width: 50%;
 }
 .glasses{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/glasses-category.jpg') no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/glasses-category.jpg') center center no-repeat;
   background-size: cover, cover;
   width: 50%;
 }
 .sale{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/sale-category.jpg') no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/sale-category.jpg') center center no-repeat;
   background-size: cover, cover;
   width: 50%;
 }
 .bags{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/bags-category.jpg') no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/bags-category.jpg') center center no-repeat;
   background-size: cover, cover;
   width: 50%;
 }
 .womens{
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/womens-category.jpg') no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/womens-category.jpg') center center no-repeat;
   background-size: cover, cover;
   width: 50%;
 }
